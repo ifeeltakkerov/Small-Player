@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "smallplayer",
+	"version": "${version}",
+	"name": "Small Player",
+	"description": "Shrink or enlarge your player visually in Minecraft",
+	"authors": [
+		"ifeeltakker"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/smallplayer",
+		"sources": "https://github.com/ifeeltakkerov/Small-Player"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/smallplayer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"dev.ifeeltakker.PlayerSizeMod"
+		]
+	},
+	"mixins": [
+		"smallplayer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
